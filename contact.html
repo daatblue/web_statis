@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayz Bakerie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icons.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <script src="https://kit.fontawesome.com/d67c9c20c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+    <div class="sidebar">
+        <header>Dayz Bakerie</header>
+        <ul>
+            <li><a href="home.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+            <li><a href="order.html"><i class="fa-solid fa-cart-shopping"></i>  Order</a></li>
+            <li><a href="artikel.html"><i class="fa-solid fa-paperclip"></i>  Articles</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-shop"></i>  Our Shop</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>  E-mail</a></li>
+        </ul>
+    </div>
+
+        <div class="navbar-logo">dayz bakerie</div>
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-extra">
+            <a href="order.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+
+    <!--Javascript Inline-->
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0"
+        }
+        lastScrollTop = scrollTop;
+        })
+    </script>
+
+    <!--Header image-->
+    <header>
+        <img src="img/headerimage.jpg">
+    </header>
+
+    <!--Form Contact Us-->
+    <form>
+        <div class="form-contact"><h2>Contact Us Here</h2></div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <br>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" placeholder="Your e-mail">
+        <br>
+        <label for="institution">Institution</label>
+        <input type="text" id="institution" placeholder="Your Institution">
+        <br>
+        <label for="message">Message</label>
+        <input type="text" id="message" placeholder="Your Message">
+        <br>
+        <button>Submit</button>
+        <br>
+    </form>
+    <br>
+    <br>
+
+    <!--Contacts-->
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <h5>For delivery enquiries, please contact us here</h5>
+            <div class="kontak-kami">
+                <div class="metode-ktk">
+                    <i class="fa-regular fa-envelope fa-2x"></i>
+                    <p>E-mail: <a href="mailto:bllueew@gmail.com" target="_blank">dayzbakerie@gmail.com</a></p>
+                </div>
+                <div class="metode-ktk">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                    <p>Call Center: <a href="tel:089888777666" target="_blank">089888777666</a></p>
+                </div>
+                <div class="metode-ktk">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <p>Instagram: <a href="instagram.com/dayzbakerie" target="_blank">@dayzbakerie</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Bagian Maps-->
+        <div class="map-container">
+            <h2>Our Store</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.846826263121!2d106.91085402316831!3d-6.2838571615045336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d4d2654fee9%3A0x696db6aee5173127!2sAtrium%20Pd.%20Gede%2C%20Jl.%20Raya%20Jatiwaringin%2C%20RT.001%2FRW.001%2C%20Jatiwaringin%2C%20Kec.%20Pd.%20Gede%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017411!5e0!3m2!1sen!2sid!4v1732621713083!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="socialicons">
+                <a href="https://www.instagram.com/dayzbakerie/?utm_source=ig_web_button_share_sheet"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/qr/AEANPL6AGVLNN1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>    
+                <a href="mailto:bllueew@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <div class="footernav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 | Dayz Bakerie</p>
+            <p>Design by Dinda Rahmanie Putri-11220251000013-5B-Ilmu Perpustakaan</p>
+        </div>
+    </footer>
+
+</body>
+</html>

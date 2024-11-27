@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dayz Bakerie</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="img/icons.jpg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+        <script src="https://kit.fontawesome.com/d67c9c20c1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <!--Navbar-->
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+    <div class="sidebar">
+        <header>Dayz Bakerie</header>
+        <ul>
+            <li><a href="home.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+            <li><a href="order.html"><i class="fa-solid fa-cart-shopping"></i>  Order</a></li>
+            <li><a href="article.html"><i class="fa-solid fa-paperclip"></i>  Articles</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-shop"></i>  Our Shop</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>  E-mail</a></li>
+        </ul>
+    </div>
+
+        <div class="navbar-logo">dayz bakerie</div>
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-extra">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+        <header>
+            <img src="img/artikeldonat.jpg">
+        </header>
+        <br>
+        <br>
+        <br>
+        
+    <!--Sidebar-->
+    <aside class="artikel">
+        <h3>Our articles</h3>
+        <ul>
+            <li>Lezat Nan Manis, Kisah Terciptanya Kue Brownies
+                <a href="artikel1.html" target="_blank"><br>Read more...</a></li>
+            <li>Risol Mayo, Jajanan Favorit yang Selalu Diminati
+                <a href="artikel2.html" target="_blank"><br>Read more...</a></li>
+            <li>Tak Kalah Enak, Donat Meses Juga Juara di Hati Pecinta Camilan
+                <a href="artikel3.html" target="_blank"><br>Read more...</a></li>
+        </ul>
+    </aside>
+
+        <!--Artikelnya-->
+        <div class="articles">
+            <h1>
+                Tak Kalah Enak, Donat Meses dan Gula Juga Juara di Hati Pecinta Camilan
+            </h1>
+            <br>
+            <p>
+                Hai fellas! Sudah tahu belum nih, donat kini semakin banyak jenisnya, lho. 
+                Mulai dari yang viral-viral seperti bomboloni, donat glaze, donat kukus lumer, dan masih banyak lagi. 
+                Dengan melihat keeksisan donat-donat tersebut di masyarakat kini, dari segi rasanya yang unik-unik, toppingnya yang beragam, juga pembuatannya tak membuat donat tradisional kehilangan citranya di masyarakat. 
+                <br>
+                <br>
+                Donat gula dan donat meses selalu berhasil mencuri perhatian masyarakat, terutama para pecinta camilan. 
+                Walaupun tampilannya sederhana dan tidak se-wow donat-donat kekinian, namun rasanya tetap otentik dan menggugah selera. 
+                Berbagai kalangan menyukai rasanya yang sederhana namun memiliki tekstur empuk dan lembut, selain itu sangat cocok dimakan bersama teh atau kopi di berbagai kesempatan santai.
+                <br>
+                <br>
+                Donat meses dan gula menjadi salah satu variasi donat yang paling populer di Indonesia. 
+                Bagaimana tidak populer, donat ini tak hanya memanjakan lidah para penikmatnya tetapi juga membawa kenangan manis bagi banyak orang yang sudah lama mengenal jajanan ini. 
+                Selain itu, donat meses dan gula sangat mudah ditemukan di manapun, mulai dari pasar tradisional, toko-toko kue modern, dan sebagainya. 
+                Dengan begitu, donat meses dan gula tetaplah menjadi kudapan yang tak tergantikan di hati para pecinta makanan manis.
+                <br>
+                <br>
+                ~Dayz Bakerie~
+            </p>
+        </div>
+        <br>
+
+        <!--Javascript Inline-->
+        <script type="text/javascript">
+            var lastScrollTop = 0;
+                navbar = document.getElementById("navbar");
+            window.addEventListener("scroll", function(){
+                var scrollTop = window.pageYOffset || document
+                .documentElement.scrollTop;
+            if (scrollTop > lastScrollTop){
+                navbar.style.top='-80px';
+            } else {
+                navbar.style.top="0"
+            }
+            lastScrollTop = scrollTop;
+            })
+        </script>
+       
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="socialicons">
+                <a href="https://www.instagram.com/dayzbakerie/?utm_source=ig_web_button_share_sheet"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/qr/AEANPL6AGVLNN1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>    
+                <a href="mailto:bllueew@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <div class="footernav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div> 
+        </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2024 | Dayz Bakerie</p>
+                <p>Design by Dinda Rahmanie Putri-11220251000013-5B-Ilmu Perpustakaan</p>
+            </div>
+        </footer>
+
+</body>
+</html>

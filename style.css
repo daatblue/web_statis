@@ -1,0 +1,753 @@
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: "Fraunces", serif;
+    font-family: "Poppins", serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #8ba14c;
+    transition: all .5s ease;
+    top: 0px;
+}
+.sidebar header {
+    font-size: 20px;
+    color: #ffff;
+    text-align: center;
+    line-height: 70px;
+    background: #c29f88;
+    user-select: none;
+    font-weight: bold;
+    font-family: "Fraunces", serif;
+}
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 17px;
+    color: white;
+    box-sizing: border-box;
+    border-top: 1px solid rgba (255,255,255,.1);
+    margin-left: 20px;
+    font-weight: bold;
+}
+ul li:hover a {
+    padding-left: 50px;
+}
+.sidebar ul a li {
+    margin-right: 16px;
+}
+#check {
+    display: none;
+}
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #8ba14c;
+    border: 3px;
+}
+label #cancel {
+    background: #c29f88;
+}
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 1px 10px;
+    transition: all .5s;
+}
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #ffff;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+#check:checked ~ header {
+    margin-left: 250px;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #8ba14c;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 1s ease;
+}
+#navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-family: "Fraunces", serif;
+    margin-right: 300px;
+    margin-left: 100px;
+}
+#navbar .navbar-nav ul {
+    list-style-type: none;
+    margin-right: 100px;
+    padding: 0;
+    overflow: hidden;
+}
+#navbar .navbar-nav li {
+    float: left;
+}
+#navbar .navbar-nav li a {
+    color: #ffff;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+}
+#navbar .navbar-nav li a:link a:visited {
+    color: #bc4a49;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+#navbar .navbar-nav a:hover, a:active {
+    background-color: #d9c9bb;
+}
+nav div img {
+    width: 50px;
+    margin-left: 100px;
+}
+#navbar .navbar-extra i {
+    margin-right: 50px;
+}
+.fa-solid.fa-cart-shopping {
+    color: #ffff;
+}
+#navbar .navbar-extra a:hover{
+    background-color: transparent;
+}
+
+/* Image header */
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 70px;
+    background-size: cover;
+}
+
+/* Paragraf */
+h1 {
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #bc4a49;
+    font-size: xx-large;
+}
+.description p {
+    text-align: justify;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/*MENU*/
+.product-cont {
+    background-color: #D9C9BB;
+}
+
+/*Cake Menu*/
+.menu-container {
+    flex-direction: row;
+    display: flex;  
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.menu-item {
+    width: 150px;
+    padding: 8px;
+    border: 5px;
+    margin-top: 5px;
+    border: 5px;
+    background-color: #8ba14c;
+    color: #dddee5;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+}
+.menu-item a {
+    color: #ffff;
+    text-decoration: none;
+}
+.menu-item:hover {
+    background-color: #bc4a49;
+}
+
+/*Best-Seller Menu*/
+#best-seller h2 {
+    color: #bc4a49;
+    text-align: center;
+}
+.best-seller-menu {
+    flex-direction: row;
+    display: flex;  
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Cakes*/ 
+#cakes h2 {
+    color: #bc4a49;
+    text-align: center;
+}
+.cakes-menu {
+    flex-direction: row;
+    display: flex;  
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Bread and Pastry*/
+#bread-pastry h2 {
+    color: #bc4a49;
+    text-align: center;
+}
+.bnp-menu {
+    flex-direction: row;
+    display: flex;  
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Other Menu*/
+#other h2 {
+    color: #bc4a49;
+    text-align: center;
+}
+.other-menu {
+    flex-direction: row;
+    display: flex;  
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Beverages Menu*/
+#beverages h2 {
+    color: #bc4a49;
+    text-align: center;
+}
+.beverages-menu {
+    flex-direction: row;
+    display: flex;  
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*Gambar menu*/
+.Menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.menus {
+    background-color: #ffff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 7px black;
+}
+.menus img {
+    max-width: 100%;
+    height: auto;
+}
+.box-model {
+    width: 180.5px;
+    padding: 5px;
+    border: 5px;
+    margin-top: 5px;
+    border: 5px;
+    background-color: #D9C9BB;
+    color: #1c1919;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Heading 1 */
+.first h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Fraunces", serif;
+    color: #bc4a49;
+    text-decoration: underline wavy #8ba14c;
+    padding: 5px;
+}
+
+/*Card*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.card {
+    background-color: #8ba14c;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 250ms;
+    margin-left: 30px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px black;
+    color: #ffff;
+}
+.card a img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+.card:hover {
+    transform: translate(-8px, -16px) rotate(3deg);
+}
+.card:hover ~ .card {
+    transform: translateX(50px);
+}
+
+/*Aside*/
+.artikel {
+    width: 200px;
+    background-color: #98b055;
+    padding: 5px 20px 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    float: right;
+    margin-right: 50px;
+}
+.artikel h3 {
+    margin: 10px;
+    font-size: 17px;
+    color: #ffff;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d2d1d1;
+}
+.artikel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.artikel ul li {
+    color: #ffff;
+    font-size: 15px;
+    margin: 6px 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.artikel ul li a {
+    color: #bc4a49;
+    font-weight: bold;
+}
+.artikel ul li:hover {
+    background-color: #c29f88;
+}
+
+/*HTML ARTIKEL*/
+.cards-art {
+    flex-direction: row;
+    display: flex;  
+    flex-wrap: wrap; 
+    gap: 50px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.artc h1 {
+    color: #bc4a49;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    text-decoration: underline wavy #8ba14c;
+}
+.card-art {
+    background-color: #98b055;
+    padding: 30px 40px;
+    width: 250px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    border-radius: 10px;
+    color: #ffff;
+}
+.card-art img {
+    width: 200px;
+    margin: 0 auto;
+}
+.card-art a {
+    color: #bc4a49;
+    font-weight: bold;
+}
+.card-art a b {
+    color: white;
+    font-weight: bold;
+}
+.cards1 h4 {
+    color: #bc4a49;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Container*/
+.heading2 h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #bc4a49;
+    padding: 5px;
+}
+.container-z {
+    display: flex;
+    max-width: 1100px;
+    border: 20px solid #8ba14c;
+    margin: 0 auto;
+}
+.slider {
+    width: 400px;
+    height: 300px;
+    background-color: transparent;
+    transition: all .9s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+.slider  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+.slider:hover {
+    width: 60%;
+}
+.slider:hover img {
+    transform: scale(1.1);
+}
+
+/*Profile*/
+.profile h1 {
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #bc4a49;
+    margin-top: 150px;
+}
+.profile img {
+    width: 1000px;
+}
+.profile p {
+    text-align: center;
+    padding: 30px;
+    margin-left: 130px;
+    margin-right: 130px;
+    background-color: #daf5c6;
+}
+.profil-lanjutan {
+    justify-content: space-around;
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
+.profil-lanjutan table {
+    margin-bottom: 20px;
+}
+.profil-lanjutan td {
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    text-align: justify;
+}
+.profil-lanjutan td h2 {
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #bc4a49;
+    margin-bottom: 10px;
+}
+.profil-lanjutan td ol li {
+    list-style-type: decimal;
+    margin-left: 10px;
+}
+
+/*HTML Artikel 1, 2, 3*/
+.articles {
+    margin-right: 350px;
+    margin-left: 100px;
+}
+.articles h1 {
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #bc4a49;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.articles p {
+    text-align: justify;
+}
+
+/*Form Contact Us & Order*/
+.contact h1 {
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #bc4a49;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form {
+    background-color: #D9C9BB;
+}
+form .form-contact h2{
+    width: 300px;
+    padding: 16px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #bc4a49;
+    font-weight: bold;
+}
+form, label, input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    color: #93715a;
+    font-weight: bold;
+}
+input[type=text] {
+    width: 400px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ffff;
+    text-align: center;
+}
+input[type=text]:focus {
+    outline: none;
+    border-color: #8ba14c;
+}
+form button {
+    color: white;
+    font-weight: bold;
+    background-color: #bc4a49;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+select {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #747373;
+    font-weight: bold;
+    background-color: #ffff;
+    margin: 0 auto;
+}
+option {
+    color: #747373;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+}
+select:hover {
+    border-color:#bc4a49;
+}
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Contact Info*/
+.contact-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 50px auto;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+.contact-info h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Fraunces", serif;
+}
+.contact-info h5 {
+    text-align: center;
+    color: whitesmoke;
+}
+.contact-info {
+    flex: 1;
+    background: #8ba14c;
+    padding: 20px;
+    border-radius: 5px;
+}
+.kontak-kami {
+    margin-top: 20px;
+}
+.metode-ktk {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.metode-ktk p {
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.metode-ktk i {
+    color: beige;
+    font-size: 20px;
+}
+.metode-ktk a {
+    color: beige;
+    text-decoration: none;
+}
+.metode-ktk a:hover {
+    text-decoration: underline;
+}
+.map-container {
+    flex: 2;
+    height: 360px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.map-container h2 {
+    color: #bc4a49;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    padding-bottom: 10px;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+/*footer*/
+footer {
+    background-color: #D9C9BB;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footer-container{
+    width: 100%;
+    padding: 20px;
+}
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialicons a i {
+    font-size: 30px;
+    color: #bc4a49;
+}
+.socialicons a:hover {
+    background-color: #bc4a49;
+    transition: 0.5s;
+}
+.socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+.footernav {
+    margin: 5px;
+}
+.footernav a {
+    display: grid;
+    justify-content: center;
+    margin: 10px;
+    color: #bc4a49;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: "Poppins", serif;
+}
+.footernav a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.footer-bottom {
+    background-color: #D9C9BB;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.footer-bottom p {
+    color: #bc4a49;
+}

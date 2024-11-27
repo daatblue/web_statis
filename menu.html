@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayz Bakerie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icons.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <script src="https://kit.fontawesome.com/d67c9c20c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+    <div class="sidebar">
+        <header>Dayz Bakerie</header>
+        <ul>
+            <li><a href="home.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+            <li><a href="order.html"><i class="fa-solid fa-cart-shopping"></i>  Order</a></li>
+            <li><a href="artikel.html"><i class="fa-solid fa-paperclip"></i>  Articles</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-shop"></i>  Our Shop</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>  E-mail</a></li>
+        </ul>
+    </div>
+
+        <div class="navbar-logo">dayz bakerie</div>
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-extra">
+            <a href="order.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+
+    <!--Javascript Inline-->
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0"
+        }
+        lastScrollTop = scrollTop;
+        })
+    </script>
+
+    <!--Header image-->
+    <header>
+        <img src="img/headerimage.jpg">
+    </header>
+
+    <!--Our Product Container-->
+    <div class="product-cont">
+        <br>
+        <h1>Our products</h1>
+        <!--Menu Container-->
+        <div class="menu-container">
+            <div class="menu-item"><a href="#best-seller">Best Seller</a></div>
+            <div class="menu-item"><a href="#cakes">Cakes</a></div>
+            <div class="menu-item"><a href="#bread-pastry">Bread n Pastry</a></div>
+            <div class="menu-item"><a href="#other">Other</a></div>
+            <div class="menu-item"><a href="#beverages">Beverages</a></div>
+        </div>
+        <br>
+    </div>
+    
+    <!--Best Seller Menu-->
+    <br>
+    <div id="best-seller"><h2>Best Seller</h2></div>
+        <div class="best-seller-menu">
+            <div class="menus">
+                <a>
+                    <img src="cakes/Other/risolmayo.jpg" alt="Risol Mayo" title="Risol Mayo">
+                </a>
+                <div class="box-model">Risol Mayo<br>Rp 5.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/brownie.jpg" alt="Brownies" title="Brownies">
+                </a>
+                <div class="box-model">Brownies<br>Rp 85.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Other/donatmeses.jpg" alt="Donat Meses" title="Donat Meses">
+                </a>
+                <div class="box-model">Donat Meses<br>Rp 5.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Other/aneka-cookies.jpg" alt="Cookies" title="Cookies">
+                </a>
+                <div class="box-model">Cookies All Varian<br>Rp 10.000/pcs</div>
+            </div>
+        </div>
+
+    <!--Cakes Menu-->
+    <br>
+    <!--1-->
+    <div id="cakes"><h2>Cakes</h2></div>
+        <div class="cakes-menu">
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/bdaycake.jpg" alt="Birthday Cake" title="Birthday Cake">
+                </a>
+                <div class="box-model">Birthday Cake<br>Rp 299.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/blackforest.jpg" alt="Brownies" title="Brownies">
+                </a>
+                <div class="box-model">Blackforest<br>Rp 300.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/blackforest-slice.jpg" alt="blackforest-slice" title="blackforest-slice">
+                </a>
+                <div class="box-model">Blackforest Slice<br>Rp 25.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/bolu karamel.jpg" alt="bolukaramel" title="Bolu Karamel">
+                </a>
+                <div class="box-model">Bolu Karamel<br>Rp 66.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/bolugulung1.jpg" alt="Bolu gulung" title="Bolu Gulung">
+                </a>
+                <div class="box-model">Bolu Gulung<br>Rp 60.000</div>
+            </div>
+        </div>
+        <!--2-->
+        <br>
+        <div class="cakes-menu">
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/bolumarmer.jpg" alt="Bolu Marmer" title="Bolu Marmer">
+                </a>
+                <div class="box-model">Bolu Marmer<br>Rp 65.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/brownies.jpg" alt="Brownies" title="Brownies">
+                </a>
+                <div class="box-model">Brownies<br>Rp 85.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/customcakes.jpg" alt="Custom Cake" title="Custom Cake">
+                </a>
+                <div class="box-model">Custom Cake<br>Rp 50.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/bolukeju.jpg" alt="Bolu Keju" title="Bolu Keju">
+                </a>
+                <div class="box-model">Bolu Keju<br>Rp 65.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/chocolatecake.jpg" alt="Choco Tart" title="Choco Tart">
+                </a>
+                <div class="box-model">Choco Tart<br>Rp 259.000</div>
+            </div>
+        </div>
+        <!--3-->
+        <br>
+        <div class="cakes-menu">
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/bolupisang.jpg" alt="Bolu Pisang" title="Bolu Pisang">
+                </a>
+                <div class="box-model">Bolu Pisang<br>Rp 65.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/carrotcake.jpg" alt="Carrot Cake" title="Carrot Cake">
+                </a>
+                <div class="box-model">Carrot Cake<br>Rp 80.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/sliceredvelvet.jpg" alt="Red Velvet Slice" title="Red Velvet Slice">
+                </a>
+                <div class="box-model">Red Velvet Slice<br>Rp 23.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/muffinchoco.jpg" alt="Choco Muffin" title="Choco Muffin">
+                </a>
+                <div class="box-model">Choco Muffin<br>Rp 12.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/Cake/lapislegit.jpg" alt="Lapis Legit" title="Lapis Legit">
+                </a>
+                <div class="box-model">Lapis Legit<br>Rp 670.000</div>
+            </div>
+        </div>
+
+    <!--Bread and Pastry Menu-->
+    <br>
+    <div id="bread-pastry"><h2>Bread and Pastry</h2></div>
+        <div class="bnp-menu">
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/bolenpisang.jpg" alt="Bolen Pisang" title="Bolen Pisang">
+                </a>
+                <div class="box-model">Bolen Pisang<br>Rp80.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/eggtart.jpg" alt="Egg Tart" title="Egg Tart">
+                </a>
+                <div class="box-model">Egg Tart<br>Rp 15.000 </div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/Roti Sosis.jpg" alt="Roti Sosis" title="Roti Sosis">
+                </a>
+                <div class="box-model">Roti Sosis<br>Rp 11.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/garlicbread.jpg" alt="garlicbread" title="garlicbread">
+                </a>
+                <div class="box-model">Garlic Bread<br>Rp 15.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/roti-coklat.jpg" alt="Roti Coklat" title="Roti Coklat">
+                </a>
+                <div class="box-model">Roti Coklat<br>Rp 9.000</div>
+            </div>
+        </div>
+        <br>
+        <div class="bnp-menu">
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/pain-au-chocolat.jpg" alt="Pain Au Chocolat" title="Pain Au Chocolat">
+                </a>
+                <div class="box-model">Pain Au Chocolat<br>Rp 12.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/roti.jpg" alt="Roti" title="Roti">
+                </a>
+                <div class="box-model">Roti Tawar<br>Rp 25.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/croissant.jpg" alt="Croissant" title="Croissant">
+                </a>
+                <div class="box-model">Croissant<br>Rp 16.000</div>
+            </div>
+            <div class="menus">
+                <a>
+                    <img src="cakes/BreadNPastry/chouxpastry.jpg" alt="Choux" title="Choux Pastry">
+                </a>
+                <div class="box-model">Choux Pastry<br>Rp 16.000</div>
+            </div>
+        </div>
+
+        <!--Other Menu-->
+        <br>
+        <div id="other"><h2>Other</h2></div>
+            <div class="other-menu">
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/aneka-cookies.jpg" alt="Cookies" title="Cookies">
+                    </a>
+                    <div class="box-model">Cookies All Varian<br>Rp 10.000/pcs</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/risolmayo.jpg" alt="Risol Mayo" title="Risol Mayo">
+                    </a>
+                    <div class="box-model">Risol Mayo<br>Rp 5.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/fruitsando.jpg" alt="Fruit Sando" title="Fruit Sando">
+                    </a>
+                    <div class="box-model">Fruit Sando<br>Rp 23.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/chicken bao.jpg" alt="Chicken Bao" title="Chicken Bao">
+                    </a>
+                    <div class="box-model">Chicken Bao<br>Rp 7.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/dessertbox.jpg" alt="Dessert Box" title="Dessert Box">
+                    </a>
+                    <div class="box-model">Dessert Box<br>Rp 35.000</div>
+                </div>
+            </div>
+            <!--2-->
+            <br>
+            <div class="other-menu">
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/soes.jpg" alt="Kue Soes" title="Kue Soes">
+                    </a>
+                    <div class="box-model">Kue Soes<br>Rp 10.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/donatgula.jpg" alt="Donat Gula" title="Donat Gula">
+                    </a>
+                    <div class="box-model">Donat Gula<br>Rp 5.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/donatmeses.jpg" alt="Donat Meses" title="Donat Meses">
+                    </a>
+                    <div class="box-model">Donat Meses<br>Rp 5.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/pudingcoklat.jpg" alt="Pudding Coklat" title="Pudding Coklat">
+                    </a>
+                    <div class="box-model">Pudding Coklat<br>Rp 15.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Other/pudingmango.jpg" alt="Mango Pudding" title="Mango Pudding">
+                    </a>
+                    <div class="box-model">Mango Pudding<br>Rp 15.000</div>
+                </div>
+            </div>
+
+        <!--beverages Menu-->
+        <br>
+        <div id="beverages"><h2>Beverages</h2></div>
+            <div class="beverages-menu">
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Beverages/ice-choco.jpg" alt="Iced Choco" title="Iced Choco">
+                    </a>
+                    <div class="box-model">Iced Choco<br>Rp 19.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Beverages/iced-coffee.jpg" alt="Iced Coffee" title="Iced Coffee">
+                    </a>
+                    <div class="box-model">Iced Coffee<br>Rp 21.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Beverages/matchalatte.jpg" alt="Matcha Latte" title="Matcha Latte">
+                    </a>
+                    <div class="box-model">Matcha Latte<br>Rp 21.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Beverages/thaitea.jpg" alt="Thai Tea" title="Thai Tea">
+                    </a>
+                    <div class="box-model">Thai Tea<br>Rp 18.000</div>
+                </div>
+                <div class="menus">
+                    <a>
+                        <img src="cakes/Beverages/hot-cup.jpg" alt="Hot in Cup" title="Hot in Cup">
+                    </a>
+                    <div class="box-model">Hot in Cup<br>Rp 15.000</div>
+                </div>
+            </div>
+            <br>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="socialicons">
+                <a href="https://www.instagram.com/dayzbakerie/?utm_source=ig_web_button_share_sheet"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/qr/AEANPL6AGVLNN1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>    
+                <a href="mailto:bllueew@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <div class="footernav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 | Dayz Bakerie</p>
+            <p>Design by Dinda Rahmanie Putri-11220251000013-5B-Ilmu Perpustakaan</p>
+        </div>
+    </footer>
+
+</body>
+</html>

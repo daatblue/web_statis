@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayz Bakerie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icons.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <script src="https://kit.fontawesome.com/d67c9c20c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+    <div class="sidebar">
+        <header>Dayz Bakerie</header>
+        <ul>
+            <li><a href="home.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+            <li><a href="order.html"><i class="fa-solid fa-cart-shopping"></i>  Order</a></li>
+            <li><a href="artikel.html"><i class="fa-solid fa-paperclip"></i>  Articles</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-shop"></i>  Our Shop</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>  E-mail</a></li>
+        </ul>
+    </div>
+
+        <div class="navbar-logo">dayz bakerie</div>
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-extra">
+            <a href="order.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+
+    <!--Javascript Inline-->
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0"
+        }
+        lastScrollTop = scrollTop;
+        })
+    </script>
+
+    <!--Profil Toko-->
+    <div class="profile">
+        <h1>Get to know about us!</h1>
+            <center><img src="img/headerimage.jpg"></center>
+        <p>
+            Dayz Bakerie adalah toko kue dan roti yang mengutamakan kualitas dan keaslian rasa. 
+            <br>
+            Berawal dari ketertarikan pada dunia kuliner dan baking dan bermula dari dapur kecil di rumah, maka didirikanlah toko Dayz Bakerie pada tahun 2024. 
+            Awal mulanya hanya menyediakan kue-kue rumahan, namun seiring waktu usaha ini terus berkembang demi menciptakan pelayanan dan kenangan terbaik pada pelanggan kami.
+            <br>
+            Dengan bahan-bahan pilihan dan proses produksi yang higienis, kami menawarkan berbagai produk kue, roti, dan juga pastry untuk menemani hari Anda. 
+            Kami juga menerima pesanan khusus untuk acara seperti ulang tahun, pernikahan, ataupun perayaan lainnya. 
+            Tujuan toko kami adalah menyediakan produk yang berkualitas dan memberikan pengalaman terbaik kepada pelanggan melalui produk yang lezat, pelayanan ramah, dan suasana toko yang nyaman. 
+            Kami juga terus berinovasi menciptakan produk-produk baru sesuai dengan tren dan keinginan pelanggan kami. Kami percaya bahwa produk yang dibuat oleh kami akan menghadirkan kebahagiaan pada Anda, layaknya slogan kami yaitu “Everydayz bring you joy”. 
+            <br>
+            Kunjungi kami untuk merasakan cita rasa yang dibuat dengan sepenuh hati.
+            <br>
+            <br>
+            ~Dayz Bakerie~
+        </p>
+    </div>
+    <br>
+    <!--Visi Misi-->
+    <div class="profil-lanjutan">
+        <table>
+            <tr>
+                <td>
+                    <h2>Visi</h2>
+                    Menjadi bakery pilihan utama yang dikenal karena kualitas, kelezatan, dan inovasi produk, serta memberikan kontribusi positif bagi komunitas.
+                </td>
+                <td>
+                    <h2>Misi</h2>
+                    <ol>
+                        <li>Menggunakan bahan-bahan terbaik dan proses pembuatan yang higienis untuk menghasilkan produk berkualitas tinggi.</li>
+                        <li>Menciptakan inovasi dalam varian produk untuk memenuhi kebutuhan dan selera pelanggan.</li>
+                        <li>Memberikan pelayanan terbaik dengan fokus pada kepuasan pelanggan.</li>
+                        <li>Menjalin hubungan baik dengan komunitas lokal melalui kolaborasi dan pemberdayaan masyarakat.</li>
+                    </ol>
+                </td>
+                </tr>
+        </table>
+    </div>
+   
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="socialicons">
+                <a href="https://www.instagram.com/dayzbakerie/?utm_source=ig_web_button_share_sheet"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/qr/AEANPL6AGVLNN1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>    
+                <a href="mailto:bllueew@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <div class="footernav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 | Dayz Bakerie</p>
+            <p>Design by Dinda Rahmanie Putri-11220251000013-5B-Ilmu Perpustakaan</p>
+        </div>
+    </footer>
+
+</body>
+</html>

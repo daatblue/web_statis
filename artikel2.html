@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        <title>Dayz Bakerie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/icons.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <script src="https://kit.fontawesome.com/d67c9c20c1.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <!--Navbar-->
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+        </label>
+
+    <div class="sidebar">
+        <header>Dayz Bakerie</header>
+        <ul>
+            <li><a href="home.html"><i class="fa-solid fa-house"></i>  Home</a></li>
+            <li><a href="order.html"><i class="fa-solid fa-cart-shopping"></i>  Order</a></li>
+            <li><a href="artikel.html"><i class="fa-solid fa-paperclip"></i>  Articles</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-shop"></i>  Our Shop</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>  E-mail</a></li>
+        </ul>
+    </div>
+
+        <div class="navbar-logo">dayz bakerie</div>
+        <div class="navbar-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-extra">
+            <a href="order.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+
+    <!--Javascript Inline-->
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0"
+        }
+        lastScrollTop = scrollTop;
+        })
+    </script>
+
+    <!--Header image-->
+    <header>
+        <img src="img/artikelrisol.jpg">
+    </header>
+    <br>
+    <br>
+
+    <!--Sidebar-->
+    <aside class="artikel">
+        <h3>Our articles</h3>
+        <ul>
+            <li>Lezat Nan Manis, Kisah Terciptanya Kue Brownies
+                <a href="artikel1.html" target="_blank"><br>Read more...</a></li>
+            <li>Risol Mayo, Jajanan Favorit yang Selalu Diminati
+                <a href="artikel2.html" target="_blank"><br>Read more...</a></li>
+            <li>Tak Kalah Enak, Donat Meses Juga Juara di Hati Pecinta Camilan
+                <a href="artikel3.html" target="_blank"><br>Read more...</a></li>
+        </ul>
+    </aside>
+
+    <!--Artikelnya-->
+    <div class="articles">
+        <h1>
+            Risol Mayo, Jajanan Favorit yang Selalu Diminati
+        </h1>
+        <br>
+        <p>
+            Hayo, siapa yang suka cemilan satu ini? Mindayz sih suka banget, hehe :D Yuk fellas, kita kenalan sama jajanan satu ini.
+            <br>
+            <br>
+            Risol mayo telah memikat hati banyak orang, gak cuma orang dewasa aja lho yang suka, dari anak-anak sampai orang dewasa juga suka jajanan satu ini. 
+            Risol satu ini punya ciri khas tersendiri dari risol lain, misalnya risol yang punya isian sayuran. 
+            Risol mayo ini memadukan kulit risol yang renyah dengan isian yang creamy. 
+            Isiannya itulah yang membedakan dari risol pada umumnya. Risol mayo memiliki isian creamy yang berupa campuran mayones, telur rebus, sosis, dan seringkali ditambahkan smoked beef ataupun keju yang membuat rasanya semakin kaya. 
+            Kombinasi rasa gurih dan juga tekstur lembut di bagian dalam membuat risol mayo menjadi hidangan sekaligus cemilan yang sulit ditolak, terutama kalau disajikan saat hangat, makin enak disantap!
+            <br>
+            <br>
+            Risol mayo diperkirakan adalah hasil modifikasi dari risol tradisional yang biasanya isiannya berupa sayuran atau daging cincang.                 Dalam perkembangannya, isian risol dibuat menjadi lebih kekinian dan modern sekaligus menggugah selera para pecinta kuliner dengan penggunaan bahan-bahan seperti mayones, keju, sosis, ataupun smoke beef. 
+            Rasanya yang lezat dan juga praktis untuk disajikan membuat risol mayo sering menjadi pilihan yang pas untuk berbagai acara. 
+            Selain itu, karena bahannya yang sederhana dan proses pembuatannya juga mudah, banyak yang sudah mencoba membuat sendiri di rumah. 
+            Risol mayo juga mudah ditemukan, biasanya ada di pasar tradisional, toko makanan, toko kue, dan juga online shop. 
+            Nah, fellas juga bisa lho membeli risol mayo di Dayz Bakerie ^-^                
+            <br>
+            <br>
+            ~Dayz Bakerie~
+        </p>
+    </div>
+    <br>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="socialicons">
+                <a href="https://www.instagram.com/dayzbakerie/?utm_source=ig_web_button_share_sheet"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/qr/AEANPL6AGVLNN1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>    
+                <a href="mailto:bllueew@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <div class="footernav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 | Dayz Bakerie</p>
+            <p>Design by Dinda Rahmanie Putri-11220251000013-5B-Ilmu Perpustakaan</p>
+        </div>
+    </footer>
+
+</body>
+</html>
